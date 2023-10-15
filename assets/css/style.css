@@ -40,7 +40,7 @@ html {
 .header {
     font-size: 1.2rem;
     height: 5.1rem;
-    margin: 0 2rem;
+    /* margin: 0 2rem; */
     padding: 2.5rem 2rem;
 }
 
@@ -69,12 +69,16 @@ html {
     color: rgba(255, 255, 255, 1);
     padding: .3rem .8rem;
     font-weight: 500;
-    width: .4rem;
     height: 1.316rem;
+    text-decoration: none;
 }
 
 .nav-bar .menu {
     display: none;
+}
+
+.fa-magnifying-glass {
+    cursor: pointer;
 }
 
 /* end of header */
@@ -112,7 +116,7 @@ html {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
 }
 
@@ -423,6 +427,7 @@ footer {
     width: calc(100% + 0.6rem);
     background-color: var(--primary-color);
     display: flex;
+
     flex-direction: column;
     justify-content: space-between;
     color: #e2dfdf;
@@ -438,7 +443,6 @@ footer .logo-footer {
 
 .links {
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
     align-items: baseline;
 }
@@ -479,12 +483,14 @@ footer .logo-footer {
 @media (min-width: 767px) {
     .header {
         font-size: 1.1rem;
-        margin: 3rem 5rem;
-        padding: 0rem;
+        background-color: var(--bg-secondary);
+        width: 100%;
+        padding: 4rem 0;
     }
 
-    .nav-bar {
-        justify-content: space-evenly;
+    .header .nav-bar {
+        padding: 3rem 0;
+        margin: -3.5rem 10rem 0;
     }
 
     .nav-bar .menu {
@@ -511,17 +517,21 @@ footer .logo-footer {
     .testimonial,
     footer {
         padding: 0 5rem;
-        /* overflow: hidden; */
+
     }
 
     .hero {
         flex-direction: row;
-        /* align-items: center; */
-        justify-content: space-between;
+        padding: 0 10rem;
+        align-items: center;
+        flex: 1 1 100%;
+    }
+
+    .hero .hero-left-content {
+        align-items: flex-start;
     }
 
     .hero-right-content {
-        /* align-items: center; */
         justify-content: space-around;
     }
 
@@ -534,33 +544,30 @@ footer .logo-footer {
 
     .hero-right-content img {
         width: 35rem;
-        height: 50rem;
+        height: 45rem;
         z-index: 10;
-        /* position: absolute;
-        top: 50%;
-        right: 50%; */
-        transform: translate(10%, 0%);
+        transform: translate(25%, 0%);
     }
 
     .ellipse-1 {
         width: 40rem;
-        height: 80%;
+        height: 40rem;
         background-color: #6EA8FF1A;
         position: absolute;
         top: -6%;
-        left: 2%;
+        left: 15%;
         border-radius: 50%;
         overflow: hidden;
         z-index: -1;
     }
 
     .ellipse-2 {
-        width: 60rem;
-        height: calc(100% + 3rem);
+        width: 50rem;
+        height: 50rem;
         background-color: #6ea8ff16;
         position: absolute;
-        top: -6%;
-        left: -25%;
+        top: -15%;
+        left: 0%;
         border-radius: 50%;
         overflow: hidden;
         z-index: -1;
@@ -586,14 +593,16 @@ footer .logo-footer {
     }
 
     .hero .companies-heading {
-        font-size: 1rem;
+        font-size: 1.4rem;
         height: auto;
-        margin: 8rem 0 -1rem 0;
+        margin: 8rem 0 -3rem;
+        align-self: flex-start;
         /* padding: 0 0 0 -10rem; */
     }
 
     .hero .companies {
-        justify-content: flex-start;
+        align-self: flex-start;
+
     }
 
     /* why section */
@@ -615,8 +624,12 @@ footer .logo-footer {
 
     .features {
         width: 44.4rem;
+        height: 50rem;
         grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
         gap: 3rem;
+    }
+    .feature{
+        box-shadow: -10px 10px 5px 1px rgba(9, 75, 114, .7);
     }
 
     /* end why */
@@ -647,21 +660,72 @@ footer .logo-footer {
 
     /* footer */
     .sub-footer {
-        margin: 0 -5rem;
+        margin: 0 -10rem;
+        /* padding: 0 -10rem; */
     }
 }
 
 /* desktop breakpoint */
-@media (min-width: 1023px) {
+@media (min-width: 1024px) {
+
+    .header .nav-bar,
+    .hero,
+    .why-section,
+    .archivement,
+    .testimonial,
+    .CTA,
+    .footer {
+        padding: 0 10rem;
+    }
+    .header {
+        padding: 4rem 0;
+    }
+    .header .nav-bar {
+        padding: 10rem 0;
+        margin: -10.5rem 20rem 0;
+    }
+
+    .hero {
+        margin: 5rem 0 5rem 10rem;
+    }
+
+    .hero .hero-text {
+        max-width: 60rem;
+    }
+
+    .hero .companies {
+        margin-left: .5rem;
+    }
+
+    .hero-right-content img {
+        width: 40rem;
+        height: 55rem;
+        transform: translate(50%, 0%);
+    }
+
+    .ellipse-1 {
+        width: 50rem;
+        height: 50rem;
+        top: -6%;
+        left: 35%;
+    }
+
+    .ellipse-2 {
+        width: 60rem;
+        height: 60rem;
+        top: -6%;
+        left: 20%;
+    }
+
     .why-section {
         flex-direction: row;
         justify-content: space-evenly;
+        margin: 0 -10rem;
     }
 
     .why-section .heading {
-        margin-top: 3rem;
-        padding: 2rem 0;
         text-align: center;
+        margin-left: -5rem;
     }
 
     .why-section .text {
@@ -669,6 +733,7 @@ footer .logo-footer {
         width: 384px;
         height: 144px;
         text-align: start;
+        margin-left: -3rem;
     }
 
     .btn {
@@ -681,6 +746,13 @@ footer .logo-footer {
         margin-top: 5rem;
         padding: 1rem 1.5rem;
         font-size: 1.8rem;
+    }
+    .testimonial{
+        margin: 0 -12rem;
+        min-height: 60rem;
+    }
+    .testimonial .testimonial-heading{
+        padding-bottom: 10rem;
     }
 
 }

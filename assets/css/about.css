@@ -1,0 +1,154 @@
+/* css imports */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap');
+
+/* css rules */
+:root {
+    --primary-color: rgba(9, 75, 114, 1);
+    --secondary-color: rgba(79, 79, 79, 1);
+    --third-color: rgba(139, 140, 140, 1);
+    --h2-color: rgba(45, 47, 48, 1);
+    --bg-main-color: #FFF;
+    --bg-secondary: #F2F7FF;
+    --header-font: "Playfair Display";
+    --text-font: "Plus Jakarta Sans";
+    --main-font: "Poppins";
+    --size: 10px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--header-font);
+    color: var(--h2-color);
+}
+
+/* about hero */
+.hero-banner {
+    background: url("../img/backgroud.png"), 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20.1rem;
+    margin-top: -2rem;
+}
+
+.hero-banner h1 {
+    font-size: 24px;
+    font-weight: 900;
+    color: rgba(249, 248, 249, 1);
+    width: 15.1rem;
+    height: 2.2.91rem;
+    padding: 3rem 0rem 0 4rem;
+}
+.hero-banner p{
+    width: 20rem;
+    color: rgba(249, 248, 249, 1);
+    padding: 0 0 0 4rem;
+    width: 20rem;
+    text-align: justify;
+}
+
+.about-content {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.about-content h2 {
+    font-size: 1.8rem;
+    
+    padding: 2rem 3rem;
+}
+.about-content .description p{
+    margin-top: -1.5rem;
+}
+.about-content p{
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+.articles{
+    margin-top: 3rem;
+}
+.articles h3{
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+.fa-circle {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding-right: 1rem;
+}
+
+@media (min-width: 767px) {
+    .about-content{
+        padding: 2rem 5rem;
+    }
+    .about-content h2 {
+        font-size: 2rem;
+        
+        padding: 2rem 3rem;
+    }
+    .about-content .description p{
+        margin-top: -1.5rem;
+    }
+    .about-content p{
+        font-size: 1.3rem;
+        color: var(--secondary-color);
+        line-height: 1.6;
+    }
+    
+    .articles{
+        margin-top: 3rem;
+    }
+    .articles h3{
+        font-size: 1.8rem;
+    }
+    .fa-circle {
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+}
+@media (min-width: 1023px){
+    .about-content{
+        padding: 2rem 20rem;
+    }
+    .about-content h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .about-content .description{
+        margin: 5rem 0;
+    }
+    .about-content p{
+        font-size: 1.3rem;
+        color: var(--secondary-color);
+        line-height: 1.6;
+    }
+    
+    .articles{
+        margin: 3rem 0;
+        display: flex;
+        align-items: flex-start;
+    }
+    .articles h3{
+        font-size: 1.4rem;
+    }
+    .fa-circle {
+        font-size: 1.2rem;
+        font-weight: 900;
+    }
+}
