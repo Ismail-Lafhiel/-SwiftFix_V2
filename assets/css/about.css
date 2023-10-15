@@ -32,27 +32,31 @@ h3 {
 
 /* about hero */
 .hero-banner {
-    background: url("../img/backgroud.png"), 0;
+    /* background: url("../img/backgroud.png"), 0; */
+    background-color: var(--primary-color);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 20.1rem;
+    height: 15.1rem;
     margin-top: -2rem;
 }
 
 .hero-banner h1 {
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: 900;
     color: rgba(249, 248, 249, 1);
     width: 15.1rem;
     height: 2.2.91rem;
     padding: 3rem 0rem 0 4rem;
+    margin-bottom: 3rem;
+    margin-left: -1.5rem;
 }
 .hero-banner p{
+    font-size: .8rem;
     width: 20rem;
     color: rgba(249, 248, 249, 1);
     padding: 0 0 0 4rem;
-    width: 20rem;
+    width: 30rem;
     text-align: justify;
 }
 
@@ -94,6 +98,18 @@ h3 {
 }
 
 @media (min-width: 767px) {
+    .hero-banner {
+        height: 20.1rem;
+        padding: 0 5rem;
+    }
+    .hero-banner h1 {
+        font-size: 2.4rem;
+        margin-left: -1rem;
+    }
+    .hero-banner p{
+        width: 40rem;
+        font-size: 1rem;
+    }
     .about-content{
         padding: 2rem 5rem;
     }
@@ -123,6 +139,9 @@ h3 {
     }
 }
 @media (min-width: 1023px){
+    .hero-banner {
+        padding: 0 16rem;
+    }
     .about-content{
         padding: 2rem 20rem;
     }

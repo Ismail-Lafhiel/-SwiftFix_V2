@@ -67,7 +67,7 @@ html {
     border-radius: 50%;
     background-color: #004D7B;
     color: rgba(255, 255, 255, 1);
-    padding: .3rem .8rem;
+    padding: .5rem 1.2rem;
     font-weight: 500;
     height: 1.316rem;
     text-decoration: none;
@@ -740,12 +740,19 @@ footer .logo-footer {
         padding: 1.6rem;
         font-size: 1.6rem;
     }
-
+    
     footer .logo-footer {
         font-size: 1.6rem;
         margin-top: 5rem;
         padding: 1rem 1.5rem;
         font-size: 1.8rem;
+        
+    }
+    footer .logo-footer .logo{
+        background-color: var(--bg-secondary);
+        color: var(--primary-color);
+        font-weight: 500;
+        font-size: 2rem;
     }
     .testimonial{
         margin: 0 -12rem;
