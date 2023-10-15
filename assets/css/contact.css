@@ -56,6 +56,7 @@ h3 {
     width: 20rem;
     color: rgba(249, 248, 249, 1);
     padding: 0 0 0 4rem;
+    line-height: 1.8;
     width: 40rem;
     font-size: 1rem;
     text-align: justify;
@@ -104,21 +105,22 @@ h3 {
   }
   
   .contact-form button {
+    font-size: 1.3rem;
     border: none;
+    cursor: pointer;
     display: inline-block;
-    font-family: 'Merriweather Sans', sans-serif;
     text-transform: uppercase;
-    padding: 1.0rem 5.5rem;
-    background-color: #0355cc;
-    border: .1rem solid #0355cc;
-    border-radius: 0;
+    padding: 1.5rem 4.5rem;
+    border-radius: 1rem;
+    background-color: var(--primary-color);
+    border: .1rem solid var(--primary-color);
     color: #ffffff;
     margin-top: 1.5rem;
   }
   
   .contact-form button:hover {
     background-color: transparent;
-    color: #0355cc;
+    color: var(--primary-color);
   }
 /* end contact-form */
 
@@ -131,7 +133,7 @@ h3 {
     justify-content: space-between;
 }
 .info article{
-    margin: 2.5rem 0;
+    margin: 1.6rem 0;
 }
 .info article:first-child h4{
     font-size: 1.5rem;

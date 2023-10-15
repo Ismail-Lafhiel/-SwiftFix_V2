@@ -666,7 +666,7 @@ footer .logo-footer {
 }
 
 /* desktop breakpoint */
-@media (min-width: 1024px) {
+@media (min-width: 1023px) {
 
     .header .nav-bar,
     .hero,
@@ -684,7 +684,13 @@ footer .logo-footer {
         padding: 10rem 0;
         margin: -10.5rem 20rem 0;
     }
-
+    .header .nav-bar .menu .nav-item{
+        font-size: 1.2rem;
+    }
+    .header .nav-bar .menu .nav-item.active{
+        color: var(--primary-color);
+        font-weight: 500;
+    }
     .hero {
         margin: 5rem 0 5rem 10rem;
     }

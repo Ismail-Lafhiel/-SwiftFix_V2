@@ -1,0 +1,156 @@
+/* css imports */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap');
+
+/* css rules */
+:root {
+    --primary-color: rgba(9, 75, 114, 1);
+    --secondary-color: rgba(79, 79, 79, 1);
+    --third-color: rgba(139, 140, 140, 1);
+    --h2-color: rgba(45, 47, 48, 1);
+    --bg-main-color: #FFF;
+    --bg-secondary: #F2F7FF;
+    --header-font: "Playfair Display";
+    --text-font: "Plus Jakarta Sans";
+    --main-font: "Poppins";
+    --size: 10px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--header-font);
+    color: var(--h2-color);
+}
+
+/* services hero */
+.hero-banner {
+    /* background: url("../img/backgroud.png"), 0; */
+    background-color: var(--primary-color);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20.1rem;
+    margin-top: -2rem;
+    padding: 0 16rem;
+}
+
+.hero-banner h1 {
+    font-weight: 900;
+    color: rgba(249, 248, 249, 1);
+    width: 18.1rem;
+    height: 2.2.91rem;
+    padding: 3rem 0rem 0 4rem;
+    margin-bottom: 3rem;
+    font-size: 2.4rem;
+    margin-left: -2.5rem;
+}
+
+.hero-banner p {
+    width: 20rem;
+    line-height: 1.8;
+    color: rgba(249, 248, 249, 1);
+    padding: 0 0 0 4rem;
+    width: 40rem;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* end services hero */
+
+/* start services content */
+
+.container {
+    margin: 5rem 20rem;
+}
+
+.services-content .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    gap: 3rem;
+}
+
+.heading_container h2 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+
+}
+
+.services-content .row .box {
+    margin-top: 3.0rem;
+    text-align: center;
+    -webkit-box-shadow: 0 0 .5rem .2rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 .5rem .2rem rgba(0, 0, 0, 0.15);
+    padding: 2.5rem 1.5rem;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.services-content .btn-box {
+    margin-top: 4rem;
+}
+
+.services-content .box:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.services-content .box:hover .img-box img {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+
+.services-content .box .detail-box h5 {
+    font-weight: bold;
+    font-size: 1.9rem;
+    margin: 2rem 0;
+}
+
+.services-content .box .detail-box p {
+    font-size: 1.3rem;
+    width: 30rem;
+    margin: 0;
+}
+
+.img-box img {
+    width: 8rem;
+
+}
+
+.services-content .btn-box a {
+    font-size: 1.3rem;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 1.5rem 4.5rem;
+    background-color: var(--primary-color);
+    border: .1rem solid var(--primary-color);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 1rem;
+}
+
+
+.services-content .btn-box a:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+/* end services content */

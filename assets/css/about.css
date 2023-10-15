@@ -57,6 +57,7 @@ h3 {
     color: rgba(249, 248, 249, 1);
     padding: 0 0 0 4rem;
     width: 30rem;
+    line-height: 1.8;
     text-align: justify;
 }
 
@@ -109,13 +110,13 @@ h3 {
     .hero-banner p{
         width: 40rem;
         font-size: 1rem;
+        line-height: 1.8;
     }
     .about-content{
         padding: 2rem 5rem;
     }
     .about-content h2 {
         font-size: 2rem;
-        
         padding: 2rem 3rem;
     }
     .about-content .description p{
@@ -146,7 +147,8 @@ h3 {
         padding: 2rem 20rem;
     }
     .about-content h2 {
-        font-size: 2rem;
+        font-size: 3rem;
+        text-transform: uppercase;
         margin-bottom: 2rem;
     }
     .about-content .description{
@@ -159,7 +161,7 @@ h3 {
     }
     
     .articles{
-        margin: 3rem 0;
+        margin: 5rem 0;
         display: flex;
         align-items: flex-start;
     }
