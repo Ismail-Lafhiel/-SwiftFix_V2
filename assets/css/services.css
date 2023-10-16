@@ -32,8 +32,7 @@ h3 {
 
 /* services hero */
 .hero-banner {
-    /* background: url("../img/backgroud.png"), 0; */
-    background-color: var(--primary-color);
+    background: url("../img/bg.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -43,14 +42,13 @@ h3 {
 }
 
 .hero-banner h1 {
+    text-align: start;
+    font-size: 3rem;
     font-weight: 900;
     color: rgba(249, 248, 249, 1);
-    width: 18.1rem;
-    height: 2.2.91rem;
     padding: 3rem 0rem 0 4rem;
     margin-bottom: 3rem;
-    font-size: 2.4rem;
-    margin-left: -2.5rem;
+    /* margin-left: -1rem; */
 }
 
 .hero-banner p {

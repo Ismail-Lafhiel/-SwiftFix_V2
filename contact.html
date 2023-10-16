@@ -112,9 +112,7 @@
                             <p>1800 - 458495-4455</p>
                         </article>
                     </div>
-                    <div class="location">
-                        <img src="./assets/img/map.png" alt="map">
-                    </div>
+                    <div id="map"></div>
                 </div>
             </section>
             <!-- end contact info -->
@@ -171,6 +169,20 @@
             </div>
         </footer>
     </main>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script>
+        function initMap() {
+            // Create a map object and specify the center and zoom level
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: new google.maps.LatLng(40.712775, -74.005973),
+                zoom: 12,
+            });
+        }
+    </script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=initMap"
+        async defer></script>
+    <!-- End Google Map -->
 </body>
 
 </html>
